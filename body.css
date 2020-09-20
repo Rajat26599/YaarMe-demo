@@ -1,6 +1,5 @@
 .mainBody {
   font-family: Poppins;
-  height:500px;
   margin-top:300px;
   margin-left:5%;
   margin-right:5%
@@ -14,6 +13,10 @@
 .aboutElements {
   width:30%;
 }
+.midAboutElement {
+  margin-right: 5%;
+  margin-left: 5%;
+}
 .iconDiv {
   width:50%;
   float:left;
@@ -23,4 +26,25 @@
 .aboutElemCont {
   width:50%;
   float:right;
+}
+
+@media screen and (max-width: 600px) {
+  .mainBody {
+    margin-top: -100px;
+  }
+  .aboutElements {
+    width:100%;
+  }
+  .midAboutElement {
+    margin-left: 0%;
+  }
+  .iconDiv {
+    width: 30%;
+  }
+  .aboutElemCont {
+    width: 70%;
+  }
+  .lastAboutElement {
+    margin-bottom: 100px;
+  }
 }
