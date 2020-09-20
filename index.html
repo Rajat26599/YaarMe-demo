@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>YaarMe</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Ubuntu&display=swap" rel="stylesheet"
+
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="body.css">
+  </head>
+  <body>
+
+    <!-- SIDEBAR -->
+    <div class="sideDiv" id="sideDiv" style="display:none;">
+      <ul>
+        <a id="closebtn" href="javascript:void(0)" onclick="sideClose()"><span><i class="far fa-2x fa-times-circle"></i></span></a><br>
+        <div class="">
+          <li><img id="brandLogo" src="images/Yaarme-logo.png" alt="brandLogo" width=50px></li>
+          <li style="margin-left:-10%;"><span id="side-yaar">Yaar</span><span id="side-me">Me</span></li>
+        </div><br><hr style="margin-right:10%;"><br>
+        <a href="#"><li id="side-item">Home</li></a><br>
+        <a href="#aboutHead"><li id="side-item">About</li></a><br>
+        <a href="#whyUsHead"><li id="side-item">Why Choose Us?</li></a><br>
+        <a href="#footerInfo"><li id="side-item">Contact</li></a><br>
+      </ul>
+      <br><hr style="margin-right:10%;margin-left:10%;"><br>
+      <div class="side-social">
+        <h2>
+          <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+          <a href="#"><span><i class="fab fa-twitter"></i></span></a>
+          <a href="#"><span><i class="fab fa-linkedin"></i></span></a>
+          <a href="#"><span><i class="fab fa-quora"></i></span></a>
+        </h2>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a href="#" onclick="sideOpen()">
+        <button class="openbtn"><h1 id="menuIconBurger">☰</h1></button>
+      </a>
+      <div class="navdiv1">
+        <div class="brandLogoDiv navlist">
+          <ul>
+            <li><img id="brandLogo" src="images/Yaarme-logo.png" alt="brandLogo" width=45px></li>
+            <li><span id="yaar">Yaar</span><span id="me">Me</span></li>
+          </ul>
+        </div>
+        <ul class="navlist categories">
+          <a href="#"><li id="home">Home</li></a>
+          <a href="#aboutHead"><li id="about">About</li></a>
+          <a href="#whyUsHead"><li id="whyUs">Why choose us?</li></a>
+          <a href="#footerInfo"><li id="contact">Contact</li></a>
+        </ul>
+      </div>
+      <div class="navdiv2">
+        <ul class="navlist">
+          <a href="#"><li id="login">Login</li></a>
+          <a href="#"><li id="signUp">Sign up</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- VIDEO -->
+    <div class="videoDiv">
+      <video autoplay muted loop id="myVideo">
+        <source src="images/180419_Boxing_20_18.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- JOIN US TODAY -->
+    <div class="joinUsDiv">
+      <hr>
+      <p style="color:rgba(255,255,255,0.8);">We aims to connect people with their friends, family and world in most convenient manner.</p>
+      <br>
+      <a href="#"><h4 id="joinUs-btn" style="color:white;">Join Us Today</h4></a>
+    </div>
+
+
+    <!-- BODY -->
+    <div class="mainBody">
+
+      <!-- ABOUT -->
+      <div class="aboutDiv" style="text-align:center;">
+        <div class="">
+          <h2 id="aboutHead" style="font-family:Ubuntu;">What We Do?</h2>
+          <div class="head-under" style="width:80px;"></div>
+        </div><br>
+
+        <p style="color:rgba(0,0,0,0.8);font-size: 0.9em;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore e in voluptate velit esse cillum dolore eu."</p>
+
+        <div class="" style="margin-top:50px;">
+          <div class="aboutElements" style="float:left;">
+            <div class="iconDiv">
+              <i class="fab fa-5x fa-buromobelexperte"></i>
+            </div>
+            <div class="aboutElemCont">
+              <p>Lorem Ut enim ad minim veniam, quis nostrud exercitation ullamco labost laborum.</p>
+            </div>
+          </div>
+          <div class="aboutElements" style="float:left;margin-left:5%;margin-right:5%;">
+            <div class="iconDiv">
+              <i class="far fa-5x fa-chart-bar"></i>
+            </div>
+            <div class="aboutElemCont">
+              <p>Lorem Ut enim ad minim veniam, quis nostrud exercitation ullamco labost laborum.</p>
+            </div>
+          </div>
+          <div class="aboutElements" style="float:right">
+            <div class="iconDiv">
+              <i class="far fa-5x fa-heart"></i>
+            </div>
+            <div class="aboutElemCont">
+              <p>Lorem Ut enim ad minim veniam, quis nostrud exercitation ullamco labost laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHY US -->
+      <div class="whyUsDiv" style="text-align:center;margin-top:300px;">
+        <div class="">
+          <h2 id="whyUsHead" style="font-family:Ubuntu;">Why Choose Us?</h2>
+          <div class="head-under" style="width:80px;"></div>
+        </div><br>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="" style="width:60%; float:left; display:inline; margin-top:50px;">
+        <div class="aboutFoot" style="width:25%; float:left; text-align:center;">
+          <a href="#"><p style="font-size: 1.2em"><u>About Us</u></p></a>
+          <a href="#"><p>First Content</p></a>
+          <a href="#"><p>Second Content</p></a>
+          <a href="#"><p>Third Content</p></a>
+        </div>
+        <div class="BlogFoot" style="width:25%; float:left; text-align:center;">
+          <a href="#"><p style="font-size: 1.2em"><u>Blog</u></p></a>
+          <a href="#"><p>First Content</p></a>
+          <a href="#"><p>Second Content</p></a>
+          <a href="#"><p>Third Content</p></a>
+          <a href="#"><p>Forth Content</p></a>
+          <a href="#"><p>Fifth Content</p></a>
+        </div>
+        <div class="ServicesFoot" style="width:25%; float:left; text-align:center;">
+          <a href="#"><p style="font-size: 1.2em"><u>Services</u></p></a>
+          <a href="#"><p>First Content</p></a>
+          <a href="#"><p>Second Content</p></a>
+          <a href="#"><p>Third Content</p></a>
+        </div>
+        <div class="DocFoot" style="width:25%; float:right; text-align:center;">
+          <a href="#"><p style="font-size: 1.2em"><u>Documentation</u></p></a>
+          <a href="#"><p>First Content</p></a>
+          <a href="#"><p>Second Content</p></a>
+          <a href="#"><p>Third Content</p></a>
+          <a href="#"><p>Forth Content</p></a>
+        </div>
+      </div>
+      <div class="footerInfo" style="width:30%; float:right; color:white;">
+        <p id="footerInfo" style="font-size:1.2em;">YaarMe | Information Services</p>
+        <p>Raipur, Chhattisgarh</p>
+        <p>Phone: 9169538457</p>
+        <p>Email-Id: service@yaarme.com</p>
+        <hr style="margin-right:40%;">
+        <div class="">
+          <h2>
+            <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+            <a href="#"><span><i class="fab fa-twitter"></i></span></a>
+            <a href="#"><span><i class="fab fa-linkedin"></i></span></a>
+            <a href="#"><span><i class="fab fa-quora"></i></span></a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="copyrightDiv" style="clear:both; text-align:center;">
+        <br>
+        <p style="color:rgba(255,255,255,0.8);">Copyright <span><i class="far fa-copyright"></i></span> 2020 | YaarMe Information Services | All rights reserved</p>
+      </div>
+    </div>
+
+    <!-- CUSTOM SCRIPT -->
+    <script src="master.js" type="text/javascript"></script>
+
+  </body>
+</html>

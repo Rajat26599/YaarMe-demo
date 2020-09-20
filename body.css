@@ -1,0 +1,26 @@
+.mainBody {
+  font-family: Poppins;
+  height:500px;
+  margin-top:300px;
+  margin-left:5%;
+  margin-right:5%
+}
+.head-under {
+  height:2px;
+  background-color:red;
+  margin:auto;
+  margin-top:-10px;
+}
+.aboutElements {
+  width:30%;
+}
+.iconDiv {
+  width:50%;
+  float:left;
+  margin-top:18px;
+  color:skyblue;
+}
+.aboutElemCont {
+  width:50%;
+  float:right;
+}

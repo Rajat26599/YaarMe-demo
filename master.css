@@ -1,0 +1,233 @@
+/* * {
+  border: 1px solid red !important;
+} */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  font-family: Montserrat;
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  z-index: 2;
+}
+
+.navdiv1 {
+  width: 80%;
+  float: left;
+}
+.navdiv2 {
+  display: block;
+  width: 20%;
+  float: right;
+  padding-top: 15px;
+}
+.navlist {
+  list-style: none;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  padding: 0px 20px 0px 0px;
+  margin-bottom: -20px;
+  color: white;
+}
+.openbtn {
+  all: unset;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0);
+  color: white;
+  margin: -15px 0px 0px 20px;
+  display: none;
+}
+#menuIconBurger {
+  font-size: 2em;
+}
+
+#brandLogo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 8px;
+  right:20px;
+}
+
+#yaar, #me {
+  margin-top: 15px !important;
+  font-size: 2em;
+  position: relative;
+  right: 30px;
+  bottom:-2px;
+}
+#yaar {
+  color: blue;
+}
+#me {
+  color: grey;
+}
+.categories {
+  margin-left: -30px;
+}
+.videoDiv {
+  height: 400px;
+}
+#myVideo {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.joinUsDiv {
+  width: 40%;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  font-family: Poppins;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 3%;
+}
+
+#joinUs-btn {
+  border: 1px solid white;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+#joinUs-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer {
+  background: rgba(20,100,155,1);
+  height: 350px;
+  min-width: 100%;
+  margin-top: 200px;
+  font-family: Ubuntu;
+  font-size: 0.9em;
+  color: white;
+}
+
+.footerInfo {
+  margin-top: 50px;
+}
+
+.fab {
+  padding-right: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+#home,#about,#whyUs,#contact,#login,#signUp {
+  visibility: visible;
+}
+.sideDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  #home,#about,#whyUs,#contact,#signUp {
+    display: none;
+  }
+  #login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px 20px 0px 0px;
+  }
+  .joinUsDiv {
+    text-align: center;
+    top:15%;
+    font-size: 0.8em;
+  }
+  #joinUs-btn {
+    margin-top: -6%;
+    width:55%;
+    padding:5px;
+  }
+  #myVideo {
+    max-width:100%;
+  }
+
+  .brandLogoDiv {
+    display: block;
+    margin-left: 30%;
+  }
+
+  .footer {
+    font-size: 0.7em;
+  }
+  .copyrightDiv {
+    background: grey;
+    padding-bottom: 4%;
+  }
+  .fab {
+    padding-right: 7px;
+  }
+  .sideDiv {
+    position: fixed;
+    z-index: 20;
+    display: block;
+    width: 0;
+    float: left;
+    background-image: linear-gradient(45deg, blue, purple);
+    height: 100vh;
+    padding-top: 7%;
+    transition: 0.3s;
+    text-align: center;
+
+  }
+  #side-item {
+    font-family: Ubuntu;
+    font-size: 1.2em;
+    margin-right: 15%;
+    padding: 10%;
+  }
+  #side-item:hover {
+    text-decoration: underline;
+  }
+  #side-yaar, #side-me {
+    margin-bottom: 7%;
+    font-size: 2em;
+  }
+  #side-yaar {
+    color: blue;
+  }
+  #side-me {
+    color: grey;
+  }
+  .fa-times-circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: rgba(255,255,255,0.8);
+  }
+  .openbtn {
+    display: block;
+  }
+}
